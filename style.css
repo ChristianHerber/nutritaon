@@ -1,0 +1,34 @@
+html {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.btn-nutri {
+    background: linear-gradient(#0c9c3b, #0f5435);
+    border: none;
+    animation: btnPulse 1.2s linear infinite;
+}
+
+.btn-nutri:hover {
+    background: linear-gradient(#0c9c3b, #0f5435);
+    animation: none;
+}
+
+#block_01 {
+    /* background: linear-gradient(#ffffff, #ededed); */
+}
+
+@keyframes btnPulse {
+
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+
+}
