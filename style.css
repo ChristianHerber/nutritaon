@@ -11,7 +11,7 @@ body {
 }
 
 .text_green {
-    color: #0f5435;
+    color: #0f5435!important;
 }
 
 .text_orange {
@@ -49,6 +49,10 @@ body {
 #block_03 p {
     font-size: 18px;
     color: #686868;
+}
+
+#block_05 p {
+    font-size: 18px;
 }
 
 #block_04 {
