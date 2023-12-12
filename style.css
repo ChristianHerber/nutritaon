@@ -2,8 +2,8 @@ html {
     margin:0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
     font-size: 10px;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -15,7 +15,7 @@ body {
 }
 
 .text_orange {
-    color: #d67105;
+    color: #d47910!important;
 }
 
 .btn-nutri {
@@ -24,20 +24,44 @@ body {
     animation: btnPulse 1.2s linear infinite;
     text-transform: uppercase;
     font-size: 18px;
+    padding-right: 30px;
+    padding-left: 30px;
 }
 
 .btn-nutri:hover {
-    background: linear-gradient(#0c9c3b, #0f5435);
     animation: none;
 }
 
-#block_01 {
-    /* background: linear-gradient(#0f5435 5%, #0c9c3b 50%) */
+.btn-nutri-secondary {
+    background: linear-gradient(#d47910, #b74707);
+}
+
+.block {
+    padding-top: 45px;
+    padding-bottom: 45px;
 }
 
 #block_02 {
     background: linear-gradient(#0c9c3b, #0f5435);
     background: #0f5435;
+}
+
+#block_03 p {
+    font-size: 18px;
+    color: #686868;
+}
+
+#block_04 {
+    background: url('img/bg-orange.jpeg') no-repeat bottom center;
+    background-size: cover;
+    font-size: 22px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 0 0 1px #000;
+    padding-top: 55px;
+    padding-bottom: 55px;
 }
 
 .block_title {
@@ -55,7 +79,6 @@ body {
 }
 
 .block_text {
-    text-align: center;
     text-transform: uppercase;
     font-size: 3.1rem;
     font-weight: bold;
@@ -76,7 +99,7 @@ body {
 .list-group, .list-group-item {
     background: transparent;
     color: #fff;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .list-group-item {
