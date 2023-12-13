@@ -10,6 +10,14 @@ body {
     background: url('img/bg.top.png') no-repeat top right;
 }
 
+.m-t-minus-10 {
+    margin-top: -10px;
+}
+
+.min-width-350 {
+    min-width: 350px;
+}
+
 .text_green {
     color: #0f5435!important;
 }
@@ -41,6 +49,10 @@ body {
     padding-bottom: 45px;
 }
 
+.block p {
+    text-align: center;
+}
+
 #block_02 {
     background: linear-gradient(#0c9c3b, #0f5435);
     background: #0f5435;
@@ -56,7 +68,7 @@ body {
 }
 
 #block_04 {
-    background: url('img/bg-orange.jpeg') no-repeat bottom center;
+    background: url('img/bg-orange.jpeg') no-repeat bottom center fixed;
     background-size: cover;
     font-size: 22px;
     text-align: center;
