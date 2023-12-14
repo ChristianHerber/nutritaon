@@ -4,7 +4,7 @@
 
             <div class="card border-0 col-lg-6 col-md-6 col-sm-12">
                 <img 
-                    src="img/nutri.block05.webp"
+                    src="<?php bloginfo('template_url'); ?>/img/nutri.block05.webp"
                     class="mt-4 img-fluid card-img-top"
                     width="655"
                     height="654"
@@ -34,7 +34,7 @@
                 </div>
 
                 <img 
-                    src="img/selo.webp"
+                    src="<?php bloginfo('template_url'); ?>/img/selo.webp"
                     class="mt-4 img-fluid"
                     width="320"
                     height="317"

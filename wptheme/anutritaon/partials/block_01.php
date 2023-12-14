@@ -1,6 +1,6 @@
 <header class="container block d-flex flex-column align-items-center" id="block_01">
 
-    <img src="img/title.anutritaon.webp"
+    <img src="<?php bloginfo('template_url'); ?>/img/title.anutritaon.webp"
         class="img-fluid mb-4"
         width="800"
         height="172"
@@ -11,7 +11,7 @@
         revolucionários para sua carreira no <span class="text_orange">mercado digital</span></strong></p>
 
     <img 
-        src="img/capa-ebook.webp"
+        src="<?php bloginfo('template_url'); ?>/img/capa-ebook.webp"
         class="img-fluid my-4 py-4"
         width="550"
         height="624"
