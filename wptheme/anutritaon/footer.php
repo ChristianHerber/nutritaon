@@ -1,6 +1,6 @@
     <a href="#block_01" class="backto-top shadow rounded">
         <img 
-            src="img/up-arrow.png"
+            src="<?php bloginfo('template_url'); ?>/img/up-arrow.png"
             alt="Voltar ao Topo"
             width="16"
             height="16">
