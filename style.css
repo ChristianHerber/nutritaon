@@ -10,6 +10,14 @@ body {
     background: url('img/bg.top.webp') no-repeat top right;
 }
 
+.backto-top {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    background: rgba( 255, 255, 255, 0.35 );
+    padding: 15px 17px;
+}
+
 .m-t-minus-10 {
     margin-top: -10px;
 }
