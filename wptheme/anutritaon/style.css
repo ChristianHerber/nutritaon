@@ -12,10 +12,19 @@ html {
     box-sizing: border-box;
     font-size: 10px;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
-    background: url('img/bg.top.png') no-repeat top right;
+    background: url('img/bg.top.webp') no-repeat top right;
+}
+
+.backto-top {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    background: rgba( 255, 255, 255, 0.35 );
+    padding: 15px 17px;
 }
 
 .m-t-minus-10 {
@@ -32,6 +41,10 @@ body {
 
 .text_orange {
     color: #d47910!important;
+}
+
+.bg-success {
+    background-color: #0f5435!important;
 }
 
 .btn-nutri {
@@ -71,12 +84,16 @@ body {
     color: #686868;
 }
 
+#block_05 {
+    background: linear-gradient(transparent 70%, #0c9c3b);
+}
+
 #block_05 p {
     font-size: 18px;
 }
 
 #block_04 {
-    background: url('img/bg-orange.jpeg') no-repeat bottom center fixed;
+    background: url('img/bg-orange.webp') no-repeat bottom center fixed;
     background-size: cover;
     font-size: 22px;
     text-align: center;
@@ -134,10 +151,6 @@ body {
 
 .list-group-item::before {
     content: url('img/checklist.png');
-}
-
-.values h2 {
-    font-size: 36px;
 }
 
 @keyframes btnPulse {

@@ -14,11 +14,11 @@
         <p>É uma oportunidade de crescimento contínuo, inovação e impacto significativo na área da nutrição.</p>
 
         <img 
-            src="<?php bloginfo('template_url'); ?>/img/nutri.block03.jpg"
+            src="img/nutri.block03.webp"
             class="mt-4"
             width="320"
             height="490"
-            alt="Capa do E-book">
+            alt="Renda extra ainda neste verão">
 
         <a href="#" class="btn btn-lg btn-success py-3 rounded-pill btn-nutri m-t-minus-10 min-width-350">
             Quero mudar de vida
