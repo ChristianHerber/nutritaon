@@ -1,12 +1,22 @@
 <section class="container-fluid" id="block_04">
     <div class="container block mt-4 d-flex flex-column align-items-center">
-        <p>São 10 tópicos abrangentes, cada um repleto de conteúdos
-            atualizados e estruturados em um formato passo-a-passo.</p>
 
-        <p>Com exemplos práticos, você aprenderá de forma fácil e intuitiva,
-            abrindo caminho para uma mentalidade de crescimento e sucesso.</p>
-        
-        <p>Prepare-se para desbloquear todo o seu potencial e revolucionar
-            sua abordagem profissional.</p>
+        <?php
+
+        $postLandingpage;
+        $argsLandingpage = array('post_type' => 'landing_page', 'numberposts' => 1);
+        $myPostLandingpage = get_posts($argsLandingpage);
+
+        foreach($myPostLandingpage as $postLandingpage): setup_postdata($postLandingpage);
+            $customLandingpage = get_post_custom($postLandingpage -> ID);
+
+            $copyright_04 = $customLandingpage['copyright_bloco_4'][0];
+
+        ?>
+
+        <?php echo wpautop($copyright_04); ?>
+
+        <?php endforeach; ?>
+
     </div>
 </section>

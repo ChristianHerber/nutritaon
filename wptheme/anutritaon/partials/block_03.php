@@ -1,28 +1,39 @@
 <section class="container-fluid" id="block_03">
     <div class="container block mt-4 d-flex flex-column align-items-center">
-        <h2 class="block_title text_orange">Porque trabalhar como nutricionista no mercado digital?</h2>
 
-        <p>Trabalhar como nutricionista no mercado digital oferece oportunidades únicas de expansão profissional e financeira.</p>
-        <p>Neste ambiente, você pode alcançar uma audiência global, oferecendo consultas e conselhos nutricionais sem as limitações geográficas.</p>
+    <?php
 
-        <p>Além disso, o mercado digital permite flexibilidade de horário, possibilitando equilibrar vida pessoal e trabalho.</p>
+        global $postLandingpage;
+        $argsLandingpage = array('post_type' => 'landing_page', 'numberposts' => 1);
+        $myPostLandingpage = get_posts($argsLandingpage);
 
-        <p>Com a crescente busca por saúde e bem-estar online, você tem a chance de se destacar como um especialista, compartilhar 
-        conhecimento valioso e influenciar positivamente a vida das pessoas, tudo isso enquanto explora novas vertentes de renda
-        através de consultorias online, criação de conteúdo digital e parcerias estratégicas.</p>
+        foreach($myPostLandingpage as $postLandingpage): setup_postdata($postLandingpage);
+            $customLandingpage = get_post_custom($postLandingpage -> ID);
 
-        <p>É uma oportunidade de crescimento contínuo, inovação e impacto significativo na área da nutrição.</p>
+            $blockTitle_03 = $customLandingpage['titulo_bloco_03'][0];
+            $copyright_03 = $customLandingpage['copyright_do_bloco_3'][0];
+            $img_03 = $customLandingpage['imagem_do_bloco_3'][0];
+            $linkButton_03 = $customLandingpage['link_do_botao_do_bloco_3'][0];
+            $textButton_03 = $customLandingpage['texto_do_botao_do_bloco_3'][0];
+
+        ?>
+
+        <?php echo $blockTitle_03; ?>
+
+        <?php echo $copyright_03; ?>
 
         <img 
-            src="<?php bloginfo('template_url'); ?>/img/nutri.block03.webp"
+            src="<?php echo pods_image_url($img_03, 'full'); ?>"
             class="mt-4"
             width="320"
             height="490"
             alt="Renda extra ainda neste verão">
 
-        <a href="#" class="btn btn-lg btn-success py-3 rounded-pill btn-nutri m-t-minus-10 min-width-350">
-            Quero mudar de vida
+        <a href="<?php echo $linkButton_03; ?>" class="btn btn-lg btn-success py-3 rounded-pill btn-nutri m-t-minus-10 min-width-350">
+            <?php echo $textButton_03; ?>
         </a>
+
+        <?php endforeach; ?>
 
     </div>
 </section>
