@@ -161,7 +161,7 @@ body {
     font-size: 32px;
 }
 
-.vlues h2:nth-child(2) {
+.values h2:nth-child(2) {
     font-size: 52px;
     font-weight: 900;
     animation: btnPulse 1.2s linear infinite;
