@@ -1,6 +1,6 @@
 <header class="container block d-flex flex-column align-items-center" id="block_01">
 
-    <img src="img/title.anutritaon.png"
+    <img src="<?php bloginfo('template_url'); ?>/img/title.anutritaon.png"
         class="img-fluid mb-4"
         width="800"
         height="172"
@@ -11,7 +11,7 @@
     revolucionários para sua carreira no <span class="text_orange">mercado digital</span></strong></p>
 
     <img 
-        src="img/capa-ebook.png"
+        src="<?php bloginfo('template_url'); ?>/img/capa-ebook.png"
         class="img-fluid my-4 py-4"
         width="550"
         height="624"
@@ -20,5 +20,5 @@
     <a href="#" class="btn btn-lg btn-success py-3 rounded-pill btn-nutri my-4">
         Quero conquistar renda extra
     </a>
-    
+
 </header>

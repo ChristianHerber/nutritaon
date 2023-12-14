@@ -14,7 +14,7 @@
         <p>É uma oportunidade de crescimento contínuo, inovação e impacto significativo na área da nutrição.</p>
 
         <img 
-            src="img/nutri.block03.jpg"
+            src="<?php bloginfo('template_url'); ?>/img/nutri.block03.jpg"
             class="mt-4"
             width="320"
             height="490"
