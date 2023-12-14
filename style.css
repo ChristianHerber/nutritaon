@@ -145,6 +145,20 @@ body {
     content: url('img/checklist.png');
 }
 
+.values {
+    text-align: center;
+}
+
+.values h2 {
+    font-size: 32px;
+}
+
+.vlues h2:nth-child(2) {
+    font-size: 52px;
+    font-weight: 900;
+    animation: btnPulse 1.2s linear infinite;
+}
+
 @keyframes btnPulse {
 
     0% {
